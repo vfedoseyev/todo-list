@@ -166,6 +166,7 @@ function ToDoList() {
                 />
                 <button onClick={addTask}>Add Task</button>
             </div>
+            <h2>Search task</h2>
             <div className="search-bar">
                 <input
                     value={searchText}
@@ -173,6 +174,7 @@ function ToDoList() {
                     placeholder="Search tasks"
                 />
             </div>
+            <h2>Filter task</h2>
             <div className="sort-options">
                 <button onClick={() => setSortOrder('creation')}>Sort by Creation Date</button>
                 <button onClick={() => setSortOrder('priority')}>Sort by Priority</button>

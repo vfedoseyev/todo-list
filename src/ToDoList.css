@@ -1,33 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: blanchedalmond;
+    padding: 0 10px;
+}
+
+
 .todo-list {
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .task-inputs {
     display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 input,
 select {
+    border-radius: 15px;
+
+    margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 button {
+    /* width: 100%; */
+    border-radius: 15px;
     padding: 10px;
     font-size: 16px;
 }
-
+.search-bar{
+    margin-bottom: 30px;
+}
 .sort-options {
+    display: flex;
     margin-bottom: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sort-options button {
-    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 ul {
