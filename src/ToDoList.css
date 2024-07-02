@@ -1,0 +1,60 @@
+.todo-list {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.task-inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.sort-options {
+    margin-bottom: 10px;
+}
+
+.sort-options button {
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span.completed {
+    text-decoration: line-through;
+}
+
+li button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+li button:hover {
+    text-decoration: underline;
+}

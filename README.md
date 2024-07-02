@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# To-Do List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Простое приложение для управления задачами с использованием React.js и Node.js.
 
-## Available Scripts
+![To-Do List Preview](./preview.png)
 
-In the project directory, you can run:
+## Описание
 
-### `npm start`
+To-Do List — это веб-приложение, которое позволяет пользователям создавать, редактировать, удалять и отмечать задачи как выполненные. Пользователи могут устанавливать сроки выполнения для задач и сортировать их по различным критериям.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Основные функции
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Добавление новых задач с указанием приоритета и срока выполнения.
+- Редактирование существующих задач.
+- Отметка задач как выполненных или невыполненных.
+- Сортировка задач по дате создания, приоритету, статусу и сроку выполнения.
+- Уведомления о задачах, срок выполнения которых приближается.
 
-### `npm test`
+## Технологии
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Фронтенд: React.js, CSS (с использованием анимаций CSS и библиотеки React Transition Group).
+- Бэкенд: Node.js с использованием Express.js и MongoDB для хранения данных.
+- Взаимодействие с сервером: Axios для отправки HTTP-запросов.
 
-### `npm run build`
+## Установка
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Клонирование репозитория:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/your-username/todo-list.git
+   cd todo-list
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **КУстановка зависимостей:**
+    ```bash
+    #Установка зависимостей для сервера
+    cd todo-server
+    npm install
 
-### `npm run eject`
+    #Установка зависимостей для клиента
+    cd ../todo-client
+    npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Настройка базы данных:**
+    ```bash
+    Установите MongoDB на вашем компьютере или используйте облачную базу данных MongoDB Atlas.
+    В файле server.js укажите URI вашей MongoDB в методе mongoose.connect.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Запуск сервера и клиента:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    # В одном терминале запустите сервер
+    cd todo-server
+    npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    # В другом терминале запустите клиент
+    cd todo-client
+    npm start
 
-## Learn More
+## Использование
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Добавление задачи:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Введите текст задачи в поле ввода.
+2. Выберите приоритет задачи из выпадающего списка.
+3. Установите срок выполнения, выбрав дату и время в календаре.
 
-### Code Splitting
+#### Редактирование задачи:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Нажмите кнопку "Edit" рядом с задачей.
+2. Внесите изменения в текст задачи и/или срок выполнения.
+3. Нажмите кнопку "Save" для сохранения изменений.
 
-### Analyzing the Bundle Size
+#### Отметка задачи как выполненной:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Кликните по чекбоксу слева от задачи.
 
-### Making a Progressive Web App
+#### Сортировка задач:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Используйте кнопки сортировки в верхней части страницы для выбора сортировки по критериям: дата создания, приоритет, статус и срок выполнения.
 
-### Advanced Configuration
+### Дополнительная информация
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Структура проекта:** Проект разделён на две части: серверная часть (`todo-server`) и клиентская часть.
+- **Вклад в проект:** Приглашаю
